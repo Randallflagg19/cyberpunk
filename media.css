@@ -1,0 +1,160 @@
+/*телефон*/
+@media (max-width: 767px) {
+    .main-screen_container {
+        position: static;
+        max-width: 345px;
+    }
+
+    .desc-container {
+        max-width: 345px;
+    }
+
+    .bg-image {
+        object-position: 53%;
+    }
+
+    .main-header {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .yellow-rectangle-block {
+        width: 100%;
+        bottom: -64px;
+        overflow: visible;
+    }
+
+    .contacts {
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .game--logo--name {
+        height: 50px;
+    }
+
+    .game--logo--number {
+        width: 60px;
+    }
+
+    .contacts img {
+        width: 25px;
+    }
+
+    .rectangular--info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 345px; /* Сохраняем максимальную ширину */
+    }
+
+    .rectangular--info--button {
+        font-size: 20px;
+        width: 244px;
+        height: 60px;
+    }
+
+    .available--info {
+        font-family: Archangelsk;
+        font-size: 30px;
+        font-weight: 400;
+        align-items: center;
+    }
+
+    .description-preview-screen h3 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .image-gallery {
+        max-width: 320px;
+        flex-direction: column;
+    }
+
+    .screens-wrapper {
+        flex-direction: column;
+    }
+
+    .gallery-bigImg {
+        object-fit: cover;
+        object-position: center;
+        height: 424px;
+        clip-path: polygon(12% 0, 100% 0, 100% 91%, 88% 100%, 0 100%, 0 9%);
+    }
+}
+
+/* планшет */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .main-header {
+        width: 952px;
+        height: 74px;
+        justify-content: space-between;
+    }
+
+    .main-screen_container {
+        max-width: 952px;
+    }
+
+    .bg-image {
+        object-position: 53%;
+    }
+
+    .contacts img {
+        margin-left: 40px;
+    }
+
+    .available--info br {
+        display: inline; /* Показываем перенос только на больших экранах */
+    }
+
+    .yellow-rectangle-block {
+        width: fit-content;
+    }
+
+
+    .rectangular--info--button {
+        margin-top: 25px;
+        font-size: 24px;
+    }
+
+    .desc-container {
+        max-width: 952px;
+    }
+
+
+    .image-gallery {
+        max-width: 952px;
+        flex-direction: column;
+    }
+
+    .screens-wrapper {
+        flex-direction: row;
+    }
+
+}
+
+/* монитор */
+@media (min-width: 1200px) {
+
+    .main-header {
+        width: 1280px;
+        height: 74px;
+        justify-content: space-between;
+    }
+
+    .contacts img {
+        margin-left: 40px;
+    }
+
+    .available--info br {
+        display: inline; /* Показываем перенос только на больших экранах */
+    }
+
+
+}
+
+

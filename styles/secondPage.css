@@ -1,0 +1,43 @@
+/* ВТОРАЯ СТРАНИЦА */
+.description-preview-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.desc-container {
+    max-width: 1280px;
+    margin-top: 70px;
+}
+
+.description-preview-screen h3 {
+    font-family: Archangelsk;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 63px;
+}
+
+.description-preview-screen p {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 25px;
+}
+
+
+.image-gallery {
+    margin-top: 70px;
+    max-width: 1280px;
+    display: flex;
+    gap: 32px;
+    margin-bottom: 70px;
+}
+
+.screens-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}

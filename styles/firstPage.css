@@ -1,0 +1,99 @@
+/* ПЕРВАЯ СТРАНИЦА*/
+
+.main-screen {
+    height: 100%;
+}
+
+
+/* ФОН */
+
+.bg-image {
+    width: 100%;
+    height: 100%;
+    /*сохраняет пропорции*/
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1
+}
+
+/* КОНТЕЙНЕР ПЕРВОЙ СТРАНИЦЫ*/
+
+.main-screen_container {
+    position: relative;
+    max-width: 1280px;
+    height: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* ХЕДЕР */
+
+.main-header {
+    align-items: center;
+    display: flex;
+}
+
+/*логотип название и число*/
+.game--logo {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+}
+
+.game--logo img:first-child {
+    position: relative;
+}
+
+.game--logo img:last-child {
+    position: absolute;
+    top: 72%;
+    left: 60%;
+}
+
+/* ЖЕЛТЫЙ ПРЯМОУГОЛЬНИК */
+
+.yellow-rectangle-block {
+    position: absolute;
+    bottom: 15px;
+    right: 0px;
+    width: fit-content; /* По умолчанию размер по содержимому */
+}
+
+.yellow-rectangle {
+    width: 100%; /* Картинка занимает весь родительский блок */
+    height: auto;
+}
+
+.rectangular--info {
+    position: absolute; /* Позиционируем содержимое относительно родителя */
+    top: 70px;
+    left: 70px;
+}
+
+/* Перенос текста в желтом блоке*/
+.available--info br {
+    display: none;
+}
+
+.available--info {
+    font-family: Archangelsk;
+    font-size: 62px;
+    font-weight: 400;
+}
+
+.rectangular--info--button {
+    margin-top: 25px;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    color: rgba(248, 242, 0, 1);
+    border: none;
+    outline: none;
+    width: 272px;
+    height: 78px;
+}

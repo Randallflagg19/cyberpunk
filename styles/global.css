@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Archangelsk';
+    src: url('../fonts/archangelsk.ttf') format('truetype'); /* Файл ttf */
+    font-weight: 400;
+    font-style: normal;
+}
+
+.blue-text {
+    color: dodgerblue;
+}
+
+
+html, body {
+    height: 100%;
+    overflow: visible;
+}

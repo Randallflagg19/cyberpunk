@@ -1,21 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-@font-face {
-    font-family: 'Archangelsk';
-    src: url('fonts/archangelsk.ttf') format('truetype'); /* Файл ttf */
-    font-weight: 400;
-    font-style: normal;
-}
-
 /* Перенос текста в желтом блоке*/
 .available--info br {
     display: none;
 }
-
 
 .description-preview-screen {
     display: flex;
@@ -39,9 +25,6 @@
     margin-top: 25px;
 }
 
-.blue-text {
-    color: dodgerblue;
-}
 
 .description-name {
 
@@ -106,12 +89,6 @@
 }
 
 
-html, body {
-    height: 100%;
-    overflow: visible;
-}
-
-
 .main-screen {
     height: 100%;
 }
@@ -170,53 +147,44 @@ html, body {
         overflow: visible;
     }
 
-    .contacts {
-        padding-left: 20px;
-        padding-right: 20px;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .game--logo--name {
-        height: 50px;
-    }
-
-    .game--logo--number {
-        width: 60px;
-    }
-
-    .contacts img {
-        width: 25px;
-    }
-
-    .rectangular--info {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 345px; /* Сохраняем максимальную ширину */
-
-    }
-
-    .rectangular--info--button {
-
-        font-size: 20px;
-        width: 244px;
-        height: 60px;
-    }
-
-    .available--info {
-        font-family: Archangelsk;
-        font-size: 30px;
-        font-weight: 400;
-        align-items: center;
-    }
-
-    .description-preview-screen h3 {
-        font-size: 30px;
-        line-height: 30px;
-    }
+    /*.contacts {*/
+    /*    padding-left: 20px;*/
+    /*    padding-right: 20px;*/
+    /*    display: flex;*/
+    /*    justify-content: space-between;*/
+    /*    width: 100%;*/
+    /*}*/
+    /*.game--logo--name {*/
+    /*    height: 50px;*/
+    /*}*/
+    /*.game--logo--number {*/
+    /*    width: 60px;*/
+    /*}*/
+    /*.contacts img {*/
+    /*    width: 25px;*/
+    /*}*/
+    /*.rectangular--info {*/
+    /*    position: absolute;*/
+    /*    top: 50%;*/
+    /*    left: 50%;*/
+    /*    transform: translate(-50%, -50%);*/
+    /*    max-width: 345px; !* Сохраняем максимальную ширину *!*/
+    /*}*/
+    /*.rectangular--info--button {*/
+    /*    font-size: 20px;*/
+    /*    width: 244px;*/
+    /*    height: 60px;*/
+    /*}*/
+    /*.available--info {*/
+    /*    font-family: Archangelsk;*/
+    /*    font-size: 30px;*/
+    /*    font-weight: 400;*/
+    /*    align-items: center;*/
+    /*}*/
+    /*.description-preview-screen h3 {*/
+    /*    font-size: 30px;*/
+    /*    line-height: 30px;*/
+    /*}*/
 }
 
 /* планшет */
