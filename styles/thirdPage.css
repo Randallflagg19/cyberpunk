@@ -1,0 +1,130 @@
+.promoStar {
+    margin-top: 15px;
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+}
+
+.promoStar img:first-child {
+    width: 132px;
+}
+
+.promoStar img:last-child {
+    position: absolute;
+    top: 25%;
+    left: 28%;
+}
+
+.promoContainer {
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+}
+
+.promo-screen {
+    background-color: black;
+
+}
+
+.motto {
+    font-family: Archangelsk;
+    font-size: 62px;
+    font-weight: 400;
+    color: white;
+}
+
+.promo-description {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 34px;
+    margin-top: 25px;
+    color: white;
+}
+
+
+.console-logo {
+    position: relative; /* Родительский контейнер для позиционирования дочерних элементов */
+    display: inline-block; /* Чтобы размер контейнера зависел от картинки */
+}
+
+.console {
+    position: absolute; /* Абсолютное позиционирование относительно контейнера */
+    top: 25px; /* Отступ сверху от первой картинки */
+    right: 0; /* Прижата к правому верхнему углу */
+    z-index: 1;
+}
+
+.consoles {
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+.registration-form {
+    padding-top: 98px;
+    color: white;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+
+.add-photo-button {
+    width: 460px;
+    height: 120px;
+    background-color: black;
+    line-height: 21px;
+    font-size: 18px;
+    color: white;
+    border: 1px dashed white;
+    text-decoration: underline;
+
+}
+
+.underline {
+    margin-top: 13px;
+    margin-bottom: 35px;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+}
+
+.send-button {
+    width: 192px;
+    height: 59px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    background-color: rgba(248, 242, 0, 1);
+    border: none;
+}
+
+.agreement-block {
+    display: flex; /* Используем flex для выравнивания */
+    align-items: center; /* Вертикальное выравнивание */
+    gap: 8px; /* Отступ между чекбоксом и текстом */
+    margin-bottom: 70px;
+}
+
+.agreement {
+    font-size: 12px; /* Размер шрифта */
+    line-height: 1.2; /* Устанавливаем подходящую высоту строки */
+}
+
+.extensions {
+    display: none;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+input[type="checkbox"] {
+    accent-color: yellow; /* Цвет галочки и рамки */
+    background-color: black; /* Фон чекбокса */
+}

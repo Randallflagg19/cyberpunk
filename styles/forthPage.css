@@ -1,0 +1,32 @@
+.hp-screen {
+    background-color: rgba(248, 242, 0, 1);
+);
+}
+
+.hp-screen-container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.monitor {
+    padding-top: 70px;
+    padding-bottom: 25px;
+}
+
+.hp--game--logo {
+    width: 320px;
+}
+
+.hp--game--logo--number {
+    width: 97px;
+}
+
+.cross {
+    position: relative;
+    width: fit-content;
+}
+
+.cross img:last-child {
+    position: absolute;
+    left: 0%;
+}
