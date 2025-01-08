@@ -1,0 +1,78 @@
+.cds-screen-container {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 944px auto;
+}
+
+.cds-picture {
+    grid-column: 1;
+}
+
+.cds-article {
+    grid-column: 2;
+    padding-top: 70px;
+    padding-left: 32px;
+}
+
+.cds-buy-h2 {
+    color: white;
+    font-weight: 400;
+    font-family: Archangelsk;
+    font-size: 62px;
+    line-height: 63px;
+    width: 624px;
+}
+
+.csd-title {
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.kit-description-block {
+    padding-top: 25px;
+}
+
+.kit-list {
+    margin-top: 4px;
+}
+
+.kit-list-item {
+    display: flex;
+    padding-top: 11px;
+    text-align: center;
+}
+
+.kit-list-item img {
+    width: 26px;
+    height: 26px;
+}
+
+.kit-list-item p {
+    margin-left: 10px;
+}
+
+.kit-description {
+    color: white;
+    font-weight: 400;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.platform-block {
+    margin-top: 70px;
+}
+
+
+.pcStadia {
+    width: auto;
+    height: 160px;
+}
+
+.xboxPs {
+    margin-top: 25px;
+    padding-left: 80px;
+    width: auto;
+    height: 150px;
+}

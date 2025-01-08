@@ -6,11 +6,13 @@
 .hp-screen-container {
     max-width: 1280px;
     margin: auto;
+    padding-top: 70px;
 }
 
 .monitor {
-    padding-top: 70px;
-    padding-bottom: 25px;
+    /*padding-bottom: 25px;*/
+    width: 624px;;
+    height: 430px;
 }
 
 .hp--game--logo {
@@ -28,5 +30,104 @@
 
 .cross img:last-child {
     position: absolute;
-    left: 0%;
+    left: 0;
+}
+
+
+/**/
+
+.cross-container {
+    position: relative; /* Для наложения изображений */
+    width: 92px; /* Базовый размер креста */
+    height: 21px; /* Базовый размер креста */
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Пропорциональная ширина */
+    height: 100%; /* Пропорциональная высота */
+    object-fit: contain; /* Для сохранения пропорций изображения */
+}
+
+.hp-title {
+    font-family: Archangelsk;
+    font-weight: 400;
+    font-size: 62px;
+}
+
+.hp-description {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.hp-list {
+    margin-top: 10px;
+}
+
+.hp-ad {
+    padding-top: 25px;
+    line-height: 34px;
+}
+
+.hp-list-item {
+    display: flex;
+    padding-top: 11px;
+}
+
+.hp-list-item p {
+    margin-left: 10px;
+}
+
+.hp-list-item img {
+    width: 28px;
+}
+
+.hp-button {
+    margin-top: 40px;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    line-height: 21px;
+    color: rgba(248, 242, 0, 1);
+    border: none;
+    outline: none;
+    width: 194px;
+    height: 59px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto; /* Две строки: подстраиваются под содержимое */
+    width: 100%; /* Контейнер растягивается на всю ширину */
+    gap: 32px 26px;
+}
+
+.hp-image {
+    grid-column: 1; /* Расположено в первой колонке */
+    grid-row: 1; /* Первая строка */
+}
+
+.hp-nav {
+    grid-column: 1; /* Всё еще первая колонка */
+    grid-row: 2; /* Вторая строка */
+}
+
+.hp-article {
+    grid-column: 2; /* Вторая колонка */
+    grid-row: 1 / span 2; /* Занимает обе строки */
+}
+
+.hp-nav {
+    width: 520px;
+    height: 80px;
+    align-items: center;
+    gap: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
 }
