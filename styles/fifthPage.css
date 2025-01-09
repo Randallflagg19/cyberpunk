@@ -1,11 +1,15 @@
 .cds-screen-container {
     background-color: black;
     display: grid;
-    grid-template-columns: 944px auto;
+    grid-template-columns: auto 1fr; /* Левая колонка с фиксированной шириной, правая адаптивная */
+    /*overflow: hidden;*/
 }
 
 .cds-picture {
     grid-column: 1;
+    max-width: 100%; /* Убедитесь, что картинка не растянется больше */
+    object-fit: cover;
+    height: 100%;
 }
 
 .cds-article {
@@ -20,10 +24,10 @@
     font-family: Archangelsk;
     font-size: 62px;
     line-height: 63px;
-    width: 624px;
+    max-width: 624px;
 }
 
-.csd-title {
+.cds-title {
     font-family: Roboto;
     font-size: 24px;
     line-height: 28px;
@@ -58,10 +62,13 @@
     font-family: Roboto;
     font-size: 18px;
     line-height: 21px;
+
+    text-align: left;
 }
 
 .platform-block {
     margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 
@@ -75,4 +82,61 @@
     padding-left: 80px;
     width: auto;
     height: 150px;
+}
+
+.white-footer {
+    background-color: white;
+    height: 100px;
+}
+
+.white-footer div {
+
+    align-items: center;
+
+}
+
+.footer-container {
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+    justify-content: space-between;
+
+}
+
+.footer--logos {
+    display: flex;
+    margin-top: 13px;
+    gap: 32px;
+}
+
+.footer--game--logo {
+    width: 296px;
+}
+
+.footer--info {
+    display: flex;
+    margin-top: 12px;
+    gap: 32px;
+}
+
+.footer--info p {
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+
+.black-footer--info {
+    color: white;
+    font-weight: 400;
+    font-family: Roboto;
+    font-size: 12px;
+    text-align: center;
+}
+
+.black-footer {
+    background-color: black;
+    height: 40px;
+    padding-top: 13px;
 }

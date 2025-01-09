@@ -217,7 +217,6 @@
 
     .hp-title {
         font-size: 30px;
-        /*line-height: 30px;*/
     }
 
     .hp-description {
@@ -229,37 +228,13 @@
         height: 20px;
     }
 
-
-    /*.grid-container {*/
-    /*    display: grid;*/
-    /*    grid-template-columns: auto;*/
-    /*    grid-template-rows: auto auto auto; !* Две строки: подстраиваются под содержимое *!*/
-    /*    width: 100%; !* Контейнер растягивается на всю ширину *!*/
-    /*    gap: 32px 26px;*/
-    /*}*/
-    /*.hp-image {*/
-    /*    grid-column: 1; !* Расположено в первой колонке *!*/
-    /*    grid-row: 1; !* Первая строка *!*/
-    /*}*/
-    /*.hp-nav {*/
-    /*    grid-column: 1; !* Всё еще первая колонка *!*/
-    /*    grid-row: 2; !* Вторая строка *!*/
-    /*}*/
-    /*.hp-article {*/
-    /*    grid-column: 1;*/
-    /*    grid-row: 3 / span 2; !* Занимает обе строки *!*/
-    /*}*/
     .cds-screen-container {
-        /*background-color: black;*/
-        /*display: grid;*/
         grid-template-columns: 1fr;
-
+        justify-items: center;
     }
 
     .cds-picture {
         grid-row: 1;
-        /*!*width: 320px;*!*/
-        /*height: 198px;*/
         width: 100%;
         height: 100%;
     }
@@ -269,13 +244,19 @@
         line-height: 30px
     }
 
+    .cds-title {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
     .cds-article {
         grid-column: 1;
         grid-row: 2;
         padding-top: 70px;
-        padding-left: 32px;
         width: 296px;
+        justify-content: center;
     }
+
 
     .kit-description {
         font-size: 16px;
@@ -310,6 +291,38 @@
         width: auto;
         height: 120px;
     }
+
+    .footer--info {
+        background: rgba(230, 230, 230, 1);
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer--logos {
+        flex-direction: column;
+    }
+
+    .footer--game--logo {
+        width: 200px;
+    }
+
+    .footer--info {
+        width: 100%;
+        height: 103px;
+        flex-direction: column;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        gap: 15px;
+    }
+
+    .footer--info p {
+        font-family: Roboto;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
 }
 
 /* планшет */
@@ -436,6 +449,10 @@
     .cds-screen-container {
         grid-template-columns: 332px auto;
     }
+
+    .footer-container {
+        max-width: 952px;
+    }
 }
 
 /* монитор */
@@ -473,7 +490,10 @@
         display: block;
     }
 
-
+    /*!**!*/
+    /*.cds-picture-container {*/
+    /*    height: 717px;*/
+    /*}*/
 }
 
 
