@@ -11,16 +11,16 @@
     font-style: normal;
 }
 
+html, body {
+    height: 100%;
+    overflow: visible;
+}
+
 .blue-text {
     color: dodgerblue;
     font-weight: 700;
 }
 
-
-html, body {
-    height: 100%;
-    overflow: visible;
-}
 
 .separator {
     width: 100%;

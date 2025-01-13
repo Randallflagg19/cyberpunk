@@ -1,3 +1,5 @@
+/* полоса прокрутки. убрать*/
+
 .promoStar {
     margin-top: 15px;
     position: relative;
@@ -23,7 +25,6 @@
 
 .promo-screen {
     background-color: black;
-
 }
 
 .motto {

@@ -2,10 +2,9 @@
 @media (max-width: 767px) {
     .main-screen_container {
         position: static;
-        max-width: 345px;
     }
 
-    .desc-container {
+    .desc-container, .main-screen_container, .rectangular--info {
         max-width: 345px;
     }
 
@@ -16,6 +15,10 @@
     .main-header {
         width: 100%;
         flex-direction: column;
+    }
+
+    .registration-form {
+        width: 100%;
     }
 
     .yellow-rectangle-block {
@@ -49,7 +52,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        max-width: 345px; /* Сохраняем максимальную ширину */
         text-align: center;
     }
 
@@ -60,7 +62,7 @@
     }
 
     .available--info {
-        font-family: Archangelsk;
+        font-family: Archangelsk, serif;
         font-size: 30px;
         font-weight: 400;
         align-items: center;
@@ -99,7 +101,8 @@
         width: 35px;
     }
 
-    .promoContainer {
+    .promoContainer, .underline, .add-photo-button, .hp-screen-container,
+    .monitor, .hp-nav, .cds-buy-h2, .cds-article, .cds-nav {
         max-width: 296px;
     }
 
@@ -134,25 +137,11 @@
     }
 
     .underline {
-        width: 296px;
         height: 1px;
-    }
-
-    .add-photo-button {
-        width: 296px;
     }
 
     .send-button {
         width: 182px;
-    }
-
-    .hp-screen-container {
-        max-width: 296px;
-    }
-
-    .monitor {
-        width: 296px;
-
     }
 
     .hp {
@@ -205,12 +194,10 @@
     }
 
     .monitor {
-        width: 296px;
         height: 204px;
     }
 
     .hp-nav {
-        width: 296px;
         height: 44px;
         gap: 15px;
     }
@@ -240,7 +227,6 @@
     }
 
     .cds-buy-h2 {
-        width: 296px;
         line-height: 30px
     }
 
@@ -253,7 +239,6 @@
         grid-column: 1;
         grid-row: 2;
         padding-top: 70px;
-        width: 296px;
         justify-content: center;
     }
 
@@ -318,7 +303,7 @@
     }
 
     .footer--info p {
-        font-family: Roboto;
+        font-family: Roboto, serif;
         font-size: 16px;
         line-height: 18px;
     }
@@ -328,12 +313,13 @@
 /* планшет */
 @media (min-width: 768px) and (max-width: 1199px) {
     .main-header {
-        width: 952px;
+        max-width: 952px;
         height: 74px;
         justify-content: space-between;
     }
 
-    .main-screen_container {
+    .main-screen_container, .footer-container, .hp-screen-container,
+    .promoContainer, .image-gallery, .desc-container {
         max-width: 952px;
     }
 
@@ -349,23 +335,14 @@
         display: inline; /* Показываем перенос только на больших экранах */
     }
 
-    .yellow-rectangle-block {
-        width: fit-content;
-    }
-
 
     .rectangular--info--button {
         margin-top: 25px;
         font-size: 24px;
     }
 
-    .desc-container {
-        max-width: 952px;
-    }
-
 
     .image-gallery {
-        max-width: 952px;
         flex-direction: column;
     }
 
@@ -375,10 +352,6 @@
 
     .gallery-bigImg {
         height: 424px;
-    }
-
-    .promoContainer {
-        max-width: 952px;
     }
 
     .addedConsole {
@@ -394,7 +367,7 @@
         margin-right: 0;
     }
 
-    .moto-star {
+    .motto-star {
         max-width: 320px;
     }
 
@@ -404,10 +377,6 @@
 
     .consoles {
         top: 95px;
-    }
-
-    .hp-screen-container {
-        max-width: 952px;
     }
 
     .hp-image {
@@ -430,7 +399,6 @@
         justify-self: auto;
     }
 
-
     .cds-picture-container {
         width: 332px; /* Ширина области видимости */
         height: auto; /* Автоматическая высота контейнера (можно задать фиксированную) */
@@ -450,9 +418,7 @@
         grid-template-columns: 332px auto;
     }
 
-    .footer-container {
-        max-width: 952px;
-    }
+
 }
 
 /* монитор */
@@ -477,7 +443,7 @@
         margin-bottom: 14px;
     }
 
-    .moto-star {
+    .motto-star {
         display: flex;
         align-items: end;
     }
@@ -489,11 +455,6 @@
     .extensions {
         display: block;
     }
-
-    /*!**!*/
-    /*.cds-picture-container {*/
-    /*    height: 717px;*/
-    /*}*/
 }
 
 

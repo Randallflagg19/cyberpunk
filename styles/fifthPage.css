@@ -1,7 +1,7 @@
 .cds-screen-container {
     background-color: black;
     display: grid;
-    grid-template-columns: auto 1fr; /* Левая колонка с фиксированной шириной, правая адаптивная */
+    grid-template-columns: 1fr 1fr; /* Левая колонка с фиксированной шириной, правая адаптивная */
     /*overflow: hidden;*/
 }
 
@@ -139,4 +139,27 @@
     background-color: black;
     height: 40px;
     padding-top: 13px;
+}
+
+.cds-nav {
+    margin-top: 70px;
+    display: flex;
+    height: 160px;
+    width: 320px;
+    justify-content: space-between;
+}
+
+.pc-stadia, .xbox-ps {
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pc-stadia {
+    width: 70px;
+}
+
+.xbox-ps {
+    width: 178px;
 }
